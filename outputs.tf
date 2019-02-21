@@ -37,3 +37,8 @@ output "s3_bucket_domain_name" {
   value       = "${local.bucket_domain_name}"
   description = "Domain of S3 bucket"
 }
+
+output "s3_bucket_arn" {
+  value = "${aws_s3_bucket.origin.arn}"
+}
+
